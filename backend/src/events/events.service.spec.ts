@@ -43,7 +43,9 @@ describe('EventsService', () => {
 
       const result = await service.findAll();
       expect(result).toEqual(events);
-      expect(mockRepo.find).toHaveBeenCalledWith({ relations: ['registrations'] });
+      expect(mockRepo.find).toHaveBeenCalledWith({
+        order: { startDate: 'ASC' }
+      });
     });
   });
 

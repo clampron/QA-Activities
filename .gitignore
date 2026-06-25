@@ -4,6 +4,15 @@ npm-debug.log
 yarn-error.log
 package-lock.json
 
+# Cypress binaries and cache
+cypress/
+**/cypress.zip
+**/Cypress.exe
+**/browser_v8_context_snapshot.bin
+**/snapshot_blob.bin
+**/.cy/
+**/.cache/Cypress
+
 # Build output
 dist/
 build/

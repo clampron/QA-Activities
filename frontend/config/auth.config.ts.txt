@@ -1,0 +1,10 @@
+export const authConfig = {
+  validUser: {
+    email: "test@mail.com",
+    password: "password123"
+  },
+  invalidUser: {
+    email: "wrong@mail.com",
+    password: "wrongpassword"
+  }
+};
